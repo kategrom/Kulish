@@ -1,0 +1,502 @@
+.buy__container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.buy__photo{
+  width: 250px;
+  height: 250px;
+}
+
+.buy__item-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pictures__name{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #3D3D3D;
+  max-width: 250px;
+  margin-bottom: 3px;
+}
+
+.buy__price{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  
+  color: #3D3D3D;
+}
+
+.buy__link{
+  background: #FFFFFF;
+  border: 1px solid #393939;
+  cursor: pointer;
+  padding: 15px 110px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #393939;  
+}
+
+.buy__link:focus,
+.buy__link:hover,
+.buy__link:active{
+  background-color: rgba(80, 80, 80, 0.32);
+}
+
+.button-order{
+  background: #4137D0;
+  padding: 14px;
+  border: none;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* ------------------------------------------ */
+
+.socials-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  position: relative;
+  z-index: 100;
+}
+
+.header-cart{
+  margin-left: 35px;
+}
+
+.cart-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+ 
+  color: #fff;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart{
+  position: relative;
+  padding: 10px;
+}
+
+.cart.active:hover{
+  cursor: pointer;
+  background-color: rgb(72, 51, 24);
+}
+
+.cart-quantity{
+  position: absolute;
+  right: 0;
+  top: 20%;
+  left: 80%;
+  transform: translateY(-50%);
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 100%;
+  min-height: 16px;
+  min-width: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* .cart-product-img{
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+} */
+
+.cart-content{
+  cursor: default;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  min-width: 400px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s visibility 0.3;
+}
+
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart.active:hover .cart-content{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s,
+  visibility 0.3
+}
+
+.content{
+  padding-top: 90px;
+}
+
+.cart-content-list{
+  /* overflow: hidden; */
+  max-height: 330px;
+}
+
+.cart-content-item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.cart-product-img{
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.cart-product-title{
+  max-width: 200px;
+  margin-bottom: 14px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #3D3D3D;
+}
+
+.cart-product-price{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3D3D3D;
+}
+
+.cart-content-bottom{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-content-btn{
+  border: 2px solid black;
+  padding: 15px 50px;
+  background-color: #fff;
+}
+
+.cart-product-delete{
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-color: transparent;
+  background: url('./socials-photos/trash.svg') center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.cart-content-fullprice{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #3D3D3D;
+}
+
+.fullprice{
+  margin-top: 5px ;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #3D3D3D;
+}
+
+/* ------------------------------------------ */
+
+.simplebar-track.simplebar-vertical{
+  width: 3px;
+  background: #3d3d3d6a;
+  border-radius: 4px;
+}
+
+/* ------------------------------------------ */
+
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0;
+}
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+  max-width: 100%; /* Not required for horizontal scroll to trigger */
+  max-height: 100%; /* Needed for vertical scroll to trigger */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.simplebar-content:before,
+.simplebar-content:after {
+  content: ' ';
+  display: table;
+}
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: black;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear;
+}
+.simplebar-track.simplebar-vertical {
+  width: 4px;
+  color: #3D3D3D;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: calc(100% - 40px);
+  right: 5px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background-color: #3d3d3db3;
+  border-radius: 5px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto;
+}
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0;
+}
+
+.hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

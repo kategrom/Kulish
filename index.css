@@ -1,0 +1,46 @@
+@import url(./styles-css/header.css);
+@import url(./styles-css/preview.css);
+@import url(./styles-css/gallery.css);
+@import url(./styles-css/painting.css);
+@import url(./styles-css/philosophy.css);
+@import url(./styles-css/exitions.css);
+@import url(./styles-css/footer.css);
+
+
+*{
+  box-sizing: border-box;
+}
+
+body , html{
+  height: 100%;
+  width: 100%;
+}
+
+body,
+html{
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul , li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  width: 1220px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 780px){
+  .container{
+    width: 780px;
+    margin: 0 auto;
+  }
+}

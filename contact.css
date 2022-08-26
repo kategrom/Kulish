@@ -1,0 +1,35 @@
+@import url(./contact-css/contact-header.css);
+@import url(./contact-css/contacts.css);
+@import url(./contact-css/contact-footer.css);
+
+*{
+  box-sizing: border-box;
+}
+
+body , html{
+  height: 100%;
+  width: 100%;
+}
+
+body,
+html{
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+ul , li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  width: 1220px;
+  margin: 0 auto;
+}

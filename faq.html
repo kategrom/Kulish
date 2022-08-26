@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font-family: 'Poppins', sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Serif', serif; -->
+  <title>FAQ</title>
+  <link rel="stylesheet" href="./gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./faq.css">
+  <link rel="stylesheet" href="./faq-css-js/acco.css">
+  <link rel="stylesheet" href="./modal.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+
+      <div class="header__content">
+        
+        <img src="./header-photos/logo-photo.png" alt="Logo Photo" class="logo" style="height: 30px; width: 50px;">
+    
+      <a href="#" class="logo__text">
+        KateKulish
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link">
+              Main
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="gallery.html" class="menu__link">
+              Gallery
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./exhibitions.html"  target="_blank" class="menu__link">
+              Exhibitions
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./bio.html" target="_blank" class="menu__link">
+              Bio
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./faq.html" target="_blank" class="menu__link">
+              FAQ
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./contacts.html" target="_blank" class="menu__link">
+              Contacts
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="nft.html" target="_blank" class="menu__link">
+              NFT
+            </a>
+          </li>
+          <!-- <li class="menu__item">
+            <a href="#" class="menu__link">
+              MAGAZIN
+            </a>
+          </li> -->
+        </ul>
+   
+        
+      </nav>
+
+
+      <div class="socials"> 
+        <ul class="socials-list">
+            <li class="socials-item">
+                <a href="#" class="socials-link">
+                    <img src="./socials-photos/instagram.png" alt="socials icon" class="socials-icon">
+                </a>
+            </li>
+            <li class="socials-item">
+                <a href="#" class="socials-link">
+                    <img src="./socials-photos/twitter.png" alt="socials icon" class="socials-icon">
+                </a>
+            </li>
+            <li class="socials-item">
+                <a href="#" class="socials-link">
+                    <img src="./socials-photos/facebook.png" alt="socials icon" class="socials-icon">
+                </a>
+            </li>
+            <li class="socials-item">
+                <a href="#" class="socials-link">
+                    <img src="./socials-photos/linkedin.png" alt="socials icon" class="socials-icon">
+                </a>
+            </li>
+            <div class="header__cart cart ">
+              <li class="socials-item socials-link-epic" tabindex="0">
+                <a href="#" class="socials-link-epic cart__text">
+                  <img src="./socials-photos/shoppingcart_77968.svg" alt="socials icon" class="socials-icon">
+                  <span class="cart-quantity">0</span>
+                </a>
+              </li>
+              <!-- -->
+              <div class="cart-content">
+   
+                <ul class="cart-content-list" data-simplebar>
+                  <!-- <li class="cart-content-item">
+                    <article class="cart-content-product cart-product">
+                      <img src="./gallery-photo/photo-2.png" alt="Buy painting" class="cart-product-img">
+                      <div class="cart-product-text">
+                        <h3 class="cart-product-title">
+                          Oil painting by Kate Kulish 
+                          “She is in unity with nature 2”
+                        </h3>
+                        <span class="cart-product-price">
+                          500 $
+                        </span>
+                      </div>
+                      <button class="cart-product-delete"></button>
+                    </article>
+                  </li>
+                  <li class="cart-content-item">
+                    <article class="cart-content-product cart-product">
+                      <img src="./gallery-photo/photo-2.png" alt="Buy painting" class="cart-product-img">
+                      <div class="cart-product-text">
+                        <h3 class="cart-product-title">
+                          Oil painting by Kate Kulish 
+                          “She is in unity with nature 2”
+                        </h3>
+                        <span class="cart-product-price">
+                          500 $
+                        </span>
+                      </div>
+                      <button class="cart-product-delete"></button>
+                    </article>
+                  </li>
+                  <li class="cart-content-item">
+                    <article class="cart-content-product cart-product">
+                      <img src="./gallery-photo/photo-2.png" alt="Buy painting" class="cart-product-img">
+                      <div class="cart-product-text">
+                        <h3 class="cart-product-title">
+                          Oil painting by Kate Kulish 
+                          “She is in unity with nature 2”
+                        </h3>
+                        <span class="cart-product-price">
+                          500 $
+                        </span>
+                      </div>
+                      <button class="cart-product-delete"></button>
+                    </article>
+                  </li>
+                  <li class="cart-content-item">
+                    <article class="cart-content-product cart-product">
+                      <img src="./gallery-photo/photo-2.png" alt="Buy painting" class="cart-product-img">
+                      <div class="cart-product-text">
+                        <h3 class="cart-product-title">
+                          Oil painting by Kate Kulish 
+                          “She is in unity with nature 2”
+                        </h3>
+                        <span class="cart-product-price">
+                          500 $
+                        </span>
+                      </div>
+                      <button class="cart-product-delete"></button>
+                    </article>
+                  </li>
+                  <li class="cart-content-item">
+                    <article class="cart-content-product cart-product">
+                      <img src="./gallery-photo/photo-2.png" alt="Buy painting" class="cart-product-img">
+                      <div class="cart-product-text">
+                        <h3 class="cart-product-title">
+                          Oil painting by Kate Kulish 
+                          “She is in unity with nature 2”
+                        </h3>
+                        <span class="cart-product-price">
+                          500 $
+                        </span>
+                      </div>
+                      <button class="cart-product-delete"></button>
+                    </article>
+                  </li> -->
+                </ul>
+                <div class="cart-content-bottom">
+                  <div class="cart-content-fullprice">
+                    <span>Total:</span>
+                    <span class="fullprice">0 $</span>
+                  </div>
+                  <!-- <a href="#" class="cart-content-btn btn btn-link" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed="700">
+                      Go to koshyk
+                  </a> -->
+                  <button class="button-order">
+                    <span>Order a service</span>
+                </button>
+                </div>
+              </div>
+            </div>
+        </ul>
+    </div> 
+      </div>
+
+    </div>
+  </header>
+
+ <main class="main">
+  <section class="preview">
+    <div class="container">
+      <h3 class="preview__title">
+        Faq
+      </h3>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+
+      <h2 class="faq__title">
+        Question - Answer
+      </h2>
+
+      <ul class="accordion">
+        <li class="accordion__item">
+          <div class="accordion__title">Is it possible to make custom paintings?</div>
+          <div class="accordion__text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+            Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, 
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            Nullam dictum felis eu pede mollis pretium.</p>
+        </div>
+        </li>
+  
+        <li class="accordion__item">
+          <div class="accordion__title">Is it possible to make custom paintings?</div>
+          <div class="accordion__text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+            Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, 
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            Nullam dictum felis eu pede mollis pretium.</p>
+        </div>
+        </li>
+  
+        <li class="accordion__item">
+          <div class="accordion__title">Is it possible to make custom paintings?</div>
+          <div class="accordion__text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+            Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, 
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            Nullam dictum felis eu pede mollis pretium.</p>
+        </div>
+        </li>
+  
+        <li class="accordion__item">
+          <div class="accordion__title">Is it possible to make custom paintings?</div>
+          <div class="accordion__text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+            Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, 
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            Nullam dictum felis eu pede mollis pretium.</p>
+        </div>
+        </li>
+  
+        <li class="accordion__item">
+          <div class="accordion__title">Is it possible to make custom paintings?</div>
+          <div class="accordion__text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+            Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, 
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            Nullam dictum felis eu pede mollis pretium.</p>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" style="margin-top: 70px;">
+  <div class="container">
+
+    <div class="header__content">
+      
+      <img src="./header-photos/logo-photo.png" alt="Logo Photo" class="logo" style="height: 30px; width: 50px;">
+  
+    <a href="#" class="logo__text">
+      KateKulish
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link">
+            Main
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="gallery.html" class="menu__link">
+            Gallery
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./exhibitions.html"  target="_blank" class="menu__link">
+            Exhibitions
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./bio.html" target="_blank" class="menu__link">
+            Bio
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./faq.html" target="_blank" class="menu__link">
+            FAQ
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./contacts.html" target="_blank" class="menu__link">
+            Contacts
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="nft.html" target="_blank" class="menu__link">
+            NFT
+          </a>
+        </li>
+        <!-- <li class="menu__item">
+          <a href="#" class="menu__link">
+            MAGAZIN
+          </a>
+        </li> -->
+      </ul>
+ 
+      
+    </nav>
+
+
+    <div class="socials"> 
+      <ul class="socials-list">
+          <li class="socials-item">
+              <a href="#" class="socials-link">
+                  <img src="./socials-photos/instagram.png" alt="socials icon" class="socials-icon">
+              </a>
+          </li>
+          <li class="socials-item">
+              <a href="#" class="socials-link">
+                  <img src="./socials-photos/twitter.png" alt="socials icon" class="socials-icon">
+              </a>
+          </li>
+          <li class="socials-item">
+              <a href="#" class="socials-link">
+                  <img src="./socials-photos/facebook.png" alt="socials icon" class="socials-icon">
+              </a>
+          </li>
+          <li class="socials-item">
+              <a href="#" class="socials-link">
+                  <img src="./socials-photos/linkedin.png" alt="socials icon" class="socials-icon">
+              </a>
+          </li>
+    
+      </ul>
+  </div> 
+    </div>
+
+  </div>
+</footer>
+
+<div class="popup">
+  <div class="popup-content">
+      <button class="popup-close"></button>
+      <form class="popup-form">
+          <div class="popup-title">
+            Leave your details and we will call you
+          </div>
+          <label class="form-label">
+              <div class="form-name">Name</div>
+                <div class="input-content form-input-name">
+                  <input type="text"class="input form-input">
+                </div>
+          </label>
+          <label class="form-label">
+            <div class="form-name">Tel</div>
+            <div class="input-content form-input-phone">
+                <input type="tel"class="input form-input">
+            </div>
+          </label>
+          <label class="form-label">
+            <div class="form-name">E-mail</div>
+            <div class="input-content form-input-pochta">
+                <input type="email"class="input form-input">
+            </div>
+          </label>
+          <label class="form-label form-label-textarea">
+            <div class="form-name">Comment on the order</div>
+            <textarea class="input form-input form-textarea" placeholder="Enter text"></textarea>
+          </label>
+          <label class="form-label form-label-flex form-label-checkbox">
+              <input type="checkbox" class="checkbox-original">
+              <div class="checkbox-fake"></div>
+              <div class="checkbox-text">
+                I agree with the mailing and accept <a href="#">Terms of the contract</a>
+              </div>
+          </label>
+          <div class="form-button">
+            <button class="btn button" type="submit">
+              <span>Submit</span>
+            </button>
+          </div>
+      </form>
+  </div>
+</div>
+
+  <script src="./acco.js"></script>
+  <script src="./gallery.js"></script>
+  <script src="./galeryy.js"></script>
+  <script src="./gallerys.js"></script>  
+  <script src="./modal.js"></script>
+
+</body>
+</html>

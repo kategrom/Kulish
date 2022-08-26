@@ -1,0 +1,269 @@
+
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.21);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.popup-content{
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 528px;
+  height: 581px;
+  position: relative;
+
+  padding: 40px;
+}
+
+.popup-close{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: transparent;
+  
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.popup-close::after , .popup-close::before{
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 11px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-close::before{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup-close::after{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup-close:hover{
+  border-color: #2196F3;
+}
+
+.popup-close:hover::after{
+  background: #2196F3;
+}
+
+.popup-close:hover::before{
+  background: #2196F3;
+}
+
+.popup-title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: #212121; 
+  
+  margin-bottom: 12px;
+}
+
+.checkbox-fake{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-radius: 2px;
+  position: relative;
+  border: 1px solid #2196F3;
+  cursor: pointer;
+}
+
+.checkbox-fake::before{
+  content: "";
+  display: inline-block;
+  background: url(..//popup-photos/real.png) center no-repeat;
+  height: 8px;
+  width: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  visibility: hidden;
+}
+
+.checkbox-original{
+  display: none;
+}
+
+.checkbox-original:checked~ .checkbox-fake{
+  background: #2196F3;
+}
+
+.checkbox-original:checked~ .checkbox-fake::before{
+  visibility: visible;
+}
+
+.checkbox-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+ 
+  letter-spacing: 0.03em;
+  
+  color: #757575;
+}
+
+.checkbox-text a{
+  text-decoration: underline;
+  color: #2196F3;
+}
+
+.form-input{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #757575;
+  width: 100%;
+  height: 40px;
+  filter: none;
+
+  padding: 10px 16px;
+  padding-left: 40px;
+}
+
+.form-name{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  
+  color: #757575;
+
+  margin-bottom: 4px;
+}
+
+.form-label{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-label:last-child{
+  margin-bottom: 0;
+}
+
+.form-textarea{
+  resize: none;
+  height: 120px;
+  padding: 10px 16px;
+}
+
+.form-textarea::placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-label-textarea{
+  margin-bottom: 20px;
+}
+
+.form-label-checkbox{
+  margin-bottom: 30px;
+}
+
+.form-label-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-text{
+  margin-left: 7px;
+}
+
+.form-button{
+  text-align: center;
+}
+
+.input-content{
+  position: relative;
+}
+
+.input-content::before{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  content: "";
+  display: inline-block;
+}
+
+.form-input-name::before{
+  background: url(./popup-photos/person-black.png) center no-repeat;
+  height: 12px;
+  width: 13px;
+}
+
+.form-input-phone::before{
+  background: url(./popup-photos/phone-black.png) center no-repeat;
+  height: 13px;
+  width: 14px;
+}
+
+.form-input-pochta::before{
+  background: url(./popup-photos/pochta.png) center no-repeat;
+  height: 12px;
+  width: 15px;
+}
+
+.popup-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.button{
+  background: #4137D0;
+  padding: 20px 70px;
+  border: none;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  cursor: pointer;
+}
